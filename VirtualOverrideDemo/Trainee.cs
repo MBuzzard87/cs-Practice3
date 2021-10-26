@@ -12,9 +12,20 @@ namespace VirtualOverrideDemo
         public int WorkingHours { get; set; }
         public int SchoolHours { get; set; }
 
-        public void Learn() { }
+        public Trainee(string firstName, int salary, int workingHours, int schoolHours) : base(firstName, salary)
+        {
+            WorkingHours = workingHours;
+            SchoolHours = schoolHours;
+        }
+        public void Learn() 
+        {
+            Console.WriteLine("I'm at school learning right now, I have {0} hours of school this week", SchoolHours);
+        }
 
-        public override void Work() { }
+        public override void Work() 
+        {
+            Console.WriteLine("I'm at work but I'm not getting paid even thoguht I put in {0} hours", WorkingHours);
+        }
 
     }
 }
