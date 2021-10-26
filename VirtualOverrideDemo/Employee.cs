@@ -19,7 +19,7 @@ namespace VirtualOverrideDemo
             Salary = salary;
         }
 
-        public virtual void Work()
+        public void Work()
         {
             Console.WriteLine("I'm working");
         }

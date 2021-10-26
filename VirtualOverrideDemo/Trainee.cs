@@ -22,7 +22,7 @@ namespace VirtualOverrideDemo
             Console.WriteLine("I'm at school learning right now, I have {0} hours of school this week", SchoolHours);
         }
 
-        public override void Work() 
+        public new void Work() 
         {
             Console.WriteLine("I'm at work but I'm not getting paid even thoguht I put in {0} hours", WorkingHours);
         }
