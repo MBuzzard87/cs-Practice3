@@ -12,12 +12,23 @@ namespace VirtualOverrideDemo
         public string FirstName { get; set; }
         public int Salary { get; set; }
 
-        public void Work()
-        {
+        public Employee() { }
 
+        public Employee(string firstName, int salary) {
+            FirstName = firstName;
+            Salary = salary;
         }
 
-        public void Pause() { }
+        public virtual void Work()
+        {
+            Console.WriteLine("I'm working");
+        }
+
+        public void Pause() 
+        {
+            Console.WriteLine("I'm taking a break");
+            
+        }
 
     }
 }
