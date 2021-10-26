@@ -21,8 +21,14 @@ namespace VirtualOverrideDemo
             Post buzzPost = new Post("Thank you for visiting", "Buzz", true);
             Console.WriteLine(buzzPost.ToString());
 
-            ImagePost buzzImagePost = new ImagePost("michaelbuzzard.com","Checkout my website", "Buzz", true);
+            ImagePost buzzImagePost = new ImagePost("michaelbuzzard.com","Checkout my website", "Buzzington", true);
             Console.WriteLine(buzzImagePost.ToString());
+
+
+            VideoPost buzzVideoPost = new VideoPost("Youtube.com", 10, "Checkout my movie", "Mike", true);
+            Console.WriteLine(buzzVideoPost.ToString());
+
+            buzzVideoPost.Play();
 
             Console.ReadKey();
         }
