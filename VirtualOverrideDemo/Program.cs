@@ -18,6 +18,7 @@ namespace VirtualOverrideDemo
             dog.MakeSound();
             */
 
+            /*
             Post buzzPost = new Post("Thank you for visiting", "Buzz", true);
             Console.WriteLine(buzzPost.ToString());
 
@@ -29,6 +30,21 @@ namespace VirtualOverrideDemo
             Console.WriteLine(buzzVideoPost.ToString());
 
             buzzVideoPost.Play();
+            */
+
+            Employee buzz = new Employee("Buzz", 70000);
+            buzz.Work();
+            buzz.Pause();
+
+            Boss bruce = new Boss("Bruce Springsteen", 100000, "Kia Soul");
+            bruce.Lead();
+            bruce.Work();
+
+            Trainee mike = new Trainee("Mike", 0, 40, 20);
+            mike.Learn();
+            mike.Work();
+            mike.Pause();
+             
 
             Console.ReadKey();
         }
