@@ -8,5 +8,10 @@ namespace VirtualOverrideDemo
 {
     interface IDestructable
     {
+
+        string DestructionSound { get; set; }
+
+        void Destroy();
+
     }
 }

@@ -44,11 +44,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animal.cs" />
+    <Compile Include="Boss.cs" />
+    <Compile Include="Chair.cs" />
+    <Compile Include="Car.cs" />
+    <Compile Include="IDestructable.cs" />
     <Compile Include="Dog.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="Furniture.cs" />
+    <Compile Include="IEnumerableAndIEnumeratorDemo.cs" />
+    <Compile Include="IEnumerableDemo.cs" />
     <Compile Include="ImagePost.cs" />
     <Compile Include="Post.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ticket.cs" />
+    <Compile Include="Trainee.cs" />
+    <Compile Include="Vehicle.cs" />
     <Compile Include="VideoPost.cs" />
   </ItemGroup>
   <ItemGroup>

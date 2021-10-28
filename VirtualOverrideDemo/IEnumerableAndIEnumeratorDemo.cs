@@ -19,12 +19,14 @@ namespace VirtualOverrideDemo
         /// 
         /// When it is recommended to use the IEnumerable Interface:
         /// - Your collection represents a massive database table,
-        /// you don't want co copy the entire thing into memory and cause performance issues in your application
-        /// When it is recommended to use the IEnumerable Interface:
+        /// you don't want to copy the entire thing into memory and cause performance issues in your application
+        
+        /// When it is not recommended to use the IEnumerable Interface:
         /// you need the results right away and are possibly mutating / editing the objects later on.
         /// In this case, it is better to use an Array or a List
         /// </summary>
  
+        /*
         static void Main(string[] args)
         {
             CatShelter shelter = new CatShelter();
@@ -41,21 +43,22 @@ namespace VirtualOverrideDemo
                 }
             }
         }
+        */
     }
 
     class Cat
     {
-        //the name of the dog
+        //the name of the cat
         public string Name { get; set; }
 
-        //is this a naughty dog?
-        public bool IsNaughtyDog { get; set; }
+        //is this a naughty Cat?
+        public bool IsNaughtyCat { get; set; }
 
         //simple constructor
         public Cat(string name, bool isNaughtyDog)
         {
             this.Name = name;
-            this.IsNaughtyDog = isNaughtyDog;
+            this.IsNaughtyCat = isNaughtyDog;
 
         }
 
@@ -70,13 +73,13 @@ namespace VirtualOverrideDemo
     //objects of this class can't be used inside a for each loop because it lacks an implementation of the IEnumerable interface
     class CatShelter : IEnumerable<Cat>
     {
-        //list of type List<Dog>
+        //list of type List<Cat>
         public List<Cat> cats;
 
-        //this constrictor will initialize the dogs list with some values
+        //this constrictor will initialize the cats list with some values
         public CatShelter()
         {
-            //initialize the dogs list using the collection initializer
+            //initialize the cats list using the collection initializer
             cats = new List<Cat>()
             {
                 new Cat("Casper", false),

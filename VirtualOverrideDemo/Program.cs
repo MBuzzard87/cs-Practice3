@@ -10,7 +10,7 @@ namespace VirtualOverrideDemo
     {
         static void Main(string[] args)
         {
-            /*
+            /* Animal - Dog
             Dog dog = new Dog("Shia", 10);
             Console.WriteLine($"{dog.Name} is {dog.Age} years old");
             dog.Play();
@@ -18,7 +18,7 @@ namespace VirtualOverrideDemo
             dog.MakeSound();
             */
 
-            /*
+            /* Post - ImagePost - VideoPost
             Post buzzPost = new Post("Thank you for visiting", "Buzz", true);
             Console.WriteLine(buzzPost.ToString());
 
@@ -32,6 +32,8 @@ namespace VirtualOverrideDemo
             buzzVideoPost.Play();
             */
 
+
+            /*  Employee - Boss - Trainee
             Employee buzz = new Employee("Buzz", 70000);
             buzz.Work();
             buzz.Pause();
@@ -44,7 +46,30 @@ namespace VirtualOverrideDemo
             mike.Learn();
             mike.Work();
             mike.Pause();
-             
+           */
+
+            /* Ticket
+            Ticket t1 = new Ticket(10);
+            Ticket t2 = new Ticket(10);
+
+            // will return true since the Equals method is changed within the ticket class
+            Console.WriteLine(t2.Equals(t1));
+
+            */
+            /*
+            Chair officeChair = new Chair("Brown", "Plastic");
+            Chair gamingChair = new Chair("Black", "Wood");
+
+            Car damagedCar = new Car("Silver", 120);
+
+            damagedCar.DestructablesNearby.Add(officeChair);
+            damagedCar.DestructablesNearby.Add(gamingChair);
+
+            damagedCar.Destroy();
+            */
+
+            IEnumerableDemo IEDemo = new IEnumerableDemo();
+            
 
             Console.ReadKey();
         }

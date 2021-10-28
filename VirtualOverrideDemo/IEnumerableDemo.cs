@@ -13,11 +13,28 @@ namespace VirtualOverrideDemo
         public IEnumerableDemo()
         {
             IEnumerable<int> unknownCollection;
-            unknownCollection = GetCollection(2);
+            unknownCollection = GetCollection(1);
 
+            Console.WriteLine("This is a List");
             foreach(int i in unknownCollection)
             {
-                Console.WriteLine(i);
+                Console.Write(i + " ");
+            }
+
+            unknownCollection = GetCollection(2);
+
+            Console.WriteLine("\n\nThis is a Queue");
+            foreach (int i in unknownCollection)
+            {
+                Console.Write(i + " ");
+            }
+
+            unknownCollection = GetCollection(5);
+
+            Console.WriteLine("\n\nThis is an Array");
+            foreach (int i in unknownCollection)
+            {
+                Console.Write(i + " ");
             }
         }
         
